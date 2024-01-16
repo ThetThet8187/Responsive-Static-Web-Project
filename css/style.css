@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+/*nav start*/
+nav{
+	width: 100%;
+	height: 70px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav .logo{
+	width: 100px;
+	float: left;
+}
+
+nav ul{
+	list-style-type: none;
+	padding: 0;
+	float: right;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: orange;
+	padding: 10px 40px;
+	transition: all 1s;
+}
+
+nav ul li a:hover{
+	text-decoration: underline;
+}
+/*nav end*/
+
+/*header start*/
+header{
+	width: 100%;
+	height: 500px;
+	background-image: url('../images/header-img.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.7;
+}
+
+header div{
+	display: flex; /*ဘေးချင်းကပ်*/
+	justify-content: center; /*horizontal အလယ်ရွှေ့ပေး*/
+	align-items: center;
+	flex-direction: column;
+
+}
+
+header h1{
+	font-size: 3em;
+	margin: 0;
+	padding-top: 200px;
+	letter-spacing: 5px;
+	font-weight: 400;
+}
+
+header button{
+	border: 0;
+	padding: 10px 15px;
+	font-size: 17px;
+	border-radius: 5px;
+	transition: background-color 0.5s;
+}
+
+header button:hover{
+	background-color: orange;
+	cursor: pointer;
+}
+/*header end*/
+
+/*products start*/
+section{
+	margin-top: 55px;
+}
+
+h2{
+	text-align: center;
+	font-size: 2em;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+hr{
+	width: 50%;
+
+}
+
+.feature-imgs{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.feature-imgs .img-btn{
+	width: 40%;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	transition: all 0.5s;
+}
+
+.feature-imgs .showBtn{
+	border: 0;
+	padding: 10px 15px;
+	font-size: 17px;
+	border-radius: 5px;
+	transition: all 0.5s;
+
+	position: absolute;
+	bottom: -50px;
+	opacity: 0;
+}
+
+.feature-imgs img{
+	width: 100%;
+	height:	100%;
+	transition: all 0.5s;
+}
+
+
+.feature-imgs .img-btn:hover img{
+	opacity: 0.6;
+}
+
+.feature-imgs .img-btn:hover .showBtn{
+	opacity: 1;
+	bottom: 10px;
+}
+
+.card-box{
+	display: flex;
+	justify-content: center;
+}
+
+.card-box .card{
+	margin-top: 20px;
+	width: 30%;
+	margin-right: 15px;
+
+}
+
+.card-box .card .card-img{
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 300px;
+	transition: box-shadow 0.5s;
+}
+
+.card-img:hover{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-content h3,p,.buyBtn{
+	text-align: center;
+}
+
+.card-content h3{
+	font-weight: 400;
+	font-size: 1.2em;
+	margin-bottom: 0;
+}
+
+.card-content p{
+	font-weight: 500;
+	font-size: 1.8em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.card-content .buyBtn{
+	border: 1px solid orange;
+	background-color: white;
+	padding: 10px 15px;
+	font-size: 17px;
+	border-radius: 5px;
+	transition: background-color 0.5s;
+	margin-top: 0;
+}
+
+.card-content .buyBtn:hover{
+	background-color: orange;
+	cursor: pointer;
+}
+/*products end*/
+/*footer start*/
+
+footer{
+	width: 100%;
+	height: 350px;
+	margin-top: 55px;
+	background-color: #f5bb3d;
+
+}
+
+footer .contact{
+	margin: 50px;
+	float: left;
+}
+
+footer .social{
+	margin: 50px;
+	float: right;
+}
+ 
+footer .payment{
+	clear: right;
+	float: right;
+	margin-right: 50px;
+}
+
+footer .copyright{
+	clear: both;
+}
+
+footer .copyright h3{
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	padding: 10px;
+}
+
+.contact h4{
+	margin-bottom: 0;
+}
+
+.contact address{
+	margin-top: 0;
+}
+
+.contact span{
+	margin-top: 0;
+}
+
+.icons i{
+	font-size: 25px;
+	margin-right: 10px;
+	cursor: pointer;
+	transition: color 0.5s;
+}
+
+.icons i:hover{
+	color: #785407;
+}
+/*footer end*/
+
+/*responsive design*/
+/*for tablet*/
+@media screen and (min-width:768px) and (max-width:1024px){
+	.feature-imgs .img-btn{
+		height: 300px;
+	}
+
+	.card-box .card .card-img{
+		height: 220px;
+	}
+
+	.card-content p{
+		font-size: 1.5em;
+	}
+}
+
+/*for phone*/
+@media screen and (min-width:360px) and (max-width:430px){
+	nav ul li a{
+		font-size: 12px;
+	padding: 5px;
+}
+	header{
+		height: 350px;
+		opacity: 0.6;
+	}	
+
+	header div{
+		display: block;
+		position: relative;
+	}
+
+	header h1{
+		font-size: 2em;
+		letter-spacing: 0;
+		position: absolute;
+		bottom: -140px;
+		left: 10px;
+	}
+
+	header button{
+		position: absolute;
+		bottom: -180px;
+		left: 10px;
+	}
+
+	section{
+	margin-top: 30px;
+}
+
+	h2{
+		font-size: 1.5em;
+	}
+
+	.card-content h3{
+		font-size: 1em;
+		margin-top: 0;
+	}
+
+	.card-content p{
+		font-size: 1.3em;
+	}
+
+	.feature-imgs{
+		display: block;
+	}
+
+	.feature-imgs .img-btn{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.card-box{
+		display: block;
+	}
+
+	.card-box .card{
+		width: 100%;
+	}
+
+
+	footer{
+		width: 100%;
+		height: 470px;
+		margin-top: 30px;
+
+	}
+
+	footer .contact{
+		margin: 15px;
+		float: none;
+	}
+
+	footer .social{
+		margin: 15px;
+		float: none;
+	}
+	 
+	footer .payment{
+		float: none;
+		margin: 15px;
+	}
+
+	
+
+	
+
+}
+
+
+
+
+	
